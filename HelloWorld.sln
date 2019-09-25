@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29318.209
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Library1", "HelloWorld.Library1\HelloWorld.Library1.csproj", "{9B4B636A-E00D-4607-93AB-BF91978C27C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Library1", "HelloWorld.Library1\HelloWorld.Library1.csproj", "{9B4B636A-E00D-4607-93AB-BF91978C27C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Library2", "HelloWorld.Library2\HelloWorld.Library2.csproj", "{55202E37-2871-4ACA-AD6E-BE8886668610}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Library2", "HelloWorld.Library2\HelloWorld.Library2.csproj", "{55202E37-2871-4ACA-AD6E-BE8886668610}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.FormsApp", "HelloWorld.FormsApp\HelloWorld.FormsApp.csproj", "{E0AAE836-4A15-480A-BB99-0B615BD0CA8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.FormsApp.Core", "HelloWorld.FormsApp.Core\HelloWorld.FormsApp.Core.csproj", "{89797357-05BF-49BB-90D2-8E0DD1D2F622}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.FormsApp.Core", "HelloWorld.FormsApp.Core\HelloWorld.FormsApp.Core.csproj", "{89797357-05BF-49BB-90D2-8E0DD1D2F622}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.ConsoleApp", "HelloWorld.ConsoleApp\HelloWorld.ConsoleApp.csproj", "{2155C27C-A3EB-4510-86FD-7D5197BCAFAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{89797357-05BF-49BB-90D2-8E0DD1D2F622}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89797357-05BF-49BB-90D2-8E0DD1D2F622}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89797357-05BF-49BB-90D2-8E0DD1D2F622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2155C27C-A3EB-4510-86FD-7D5197BCAFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2155C27C-A3EB-4510-86FD-7D5197BCAFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2155C27C-A3EB-4510-86FD-7D5197BCAFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2155C27C-A3EB-4510-86FD-7D5197BCAFAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
