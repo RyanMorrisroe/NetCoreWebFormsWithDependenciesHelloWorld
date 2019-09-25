@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AssemblyName>HelloWorld.FormsApp</AssemblyName>
+    <RootNamespace>HelloWorld.FormsApp</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\HelloWorld.FormsApp\**\*.cs" />
+    <EmbeddedResource Include="..\HelloWorld.FormsApp\**\*.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="protobuf-net" Version="2.4.0" />
+    <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
+    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWorld.Library2\HelloWorld.Library2.csproj" />
+  </ItemGroup>
+</Project>
