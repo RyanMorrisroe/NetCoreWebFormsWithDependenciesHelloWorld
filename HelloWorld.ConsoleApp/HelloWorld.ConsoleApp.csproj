@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
@@ -11,6 +12,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HelloWorld.Library2\HelloWorld.Library2.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="AppData\SampleText.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

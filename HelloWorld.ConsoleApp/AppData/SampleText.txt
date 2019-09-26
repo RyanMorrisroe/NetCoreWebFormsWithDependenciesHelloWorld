@@ -1,0 +1,1 @@
+﻿This is a sentence in a sample text file.

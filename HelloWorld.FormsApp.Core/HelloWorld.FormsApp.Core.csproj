@@ -18,6 +18,9 @@
     <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HelloWorld.ConsoleApp\HelloWorld.ConsoleApp.csproj">
+      <Private>true</Private>
+    </ProjectReference>
     <ProjectReference Include="..\HelloWorld.Library2\HelloWorld.Library2.csproj" />
   </ItemGroup>
 </Project>
