@@ -29,18 +29,38 @@ namespace HelloWorld.FormsApp
             }
             else
             {
-                Process process = new Process();
-                process.StartInfo.FileName = executablePath;
-                process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                process.StartInfo.UseShellExecute = false;
-                process.StartInfo.RedirectStandardOutput = true;
-                process.Start();
-                StringBuilder sb = new StringBuilder();
-                while(!process.HasExited)
+                using (Process process = new Process())
                 {
-                    sb.Append(process.StandardOutput.ReadToEnd());
+                    process.StartInfo.FileName = executablePath;
+                    process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.Start();
+                    StringBuilder sb = new StringBuilder();
+                    while (!process.HasExited)
+                    {
+                        sb.Append(process.StandardOutput.ReadToEnd());
+                    }
+                    label1.Text = sb.ToString();
                 }
-                label1.Text = sb.ToString();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string textFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "TextFile1.txt");
+            if (!File.Exists(textFilePath))
+            {
+                MessageBox.Show("Can't find the console app. Path checked: " + textFilePath);
+            }
+            else
+            {
+                using (Process process = new Process())
+                {
+                    process.StartInfo.FileName = textFilePath;
+                    process.StartInfo.UseShellExecute = true;
+                    process.Start();
+                }
             }
         }
     }

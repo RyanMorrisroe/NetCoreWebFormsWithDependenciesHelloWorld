@@ -23,4 +23,9 @@
     </ProjectReference>
     <ProjectReference Include="..\HelloWorld.Library2\HelloWorld.Library2.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="TextFile1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
