@@ -6,7 +6,7 @@ namespace HelloWorld.Library2
 {
     public class Class2
     {
-        public LogManager logger;
+        public ILog logger;
         public ProtoWriter writer;
 
         public static int Subtraction(int a, int b)

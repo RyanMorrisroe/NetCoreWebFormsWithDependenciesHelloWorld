@@ -1,21 +1,19 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AssemblyName>HelloWorld.FormsApp</AssemblyName>
     <RootNamespace>HelloWorld.FormsApp</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\HelloWorld.FormsApp\**\*.cs" />
-    <EmbeddedResource Include="..\HelloWorld.FormsApp\**\*.resx" />
+    <Compile Include="..\HelloWorld.FormsApp\**\*.cs" Exclude="..\HelloWorld.FormsApp\bin\**\*;..\HelloWorld.FormsApp\obj\**\*" />
+    <EmbeddedResource Include="..\HelloWorld.FormsApp\**\*.resx" Exclude="..\HelloWorld.FormsApp\bin\**\*;..\HelloWorld.FormsApp\obj\**\*" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.10" />
-    <PackageReference Include="protobuf-net" Version="2.4.0" />
-    <PackageReference Include="System.Diagnostics.Debug" Version="4.3.0" />
-    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+    <PackageReference Include="log4net" Version="3.4.0" />
+    <PackageReference Include="protobuf-net" Version="3.4.21" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HelloWorld.ConsoleApp\HelloWorld.ConsoleApp.csproj">
